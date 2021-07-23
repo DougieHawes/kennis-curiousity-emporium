@@ -23,6 +23,14 @@
       "name": "Chopsticks of Yokosuna",
       "description": "provides you endless sushi, but you will be regularly attacked sumo wrestlers",
       "price": 9.99
+    },
+    {
+      "id": 4,
+      "category": "footwear",
+      "image": "",
+      "name": "Lillith's Loafers",
+      "description": "The best shoes to layback in, when you don't like laying on your back",
+      "price": 19.99
     }
   ]
 }
