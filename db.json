@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "jewellery",
+      "image": "",
+      "name": "cursed ring",
+      "description": "only to be worn by those with 6 fingers on their hand, others be warned",
+      "price": 21.99
+    },
+    {
+      "id": 2,
+      "category": "footwear",
+      "image": "",
+      "name": "Satan's Slippers",
+      "description": "so comfortable that you will not care your death will be followed by eternal damnation",
+      "price": 29.99
+    },
+    {
+      "id": 3,
+      "category": "utensils",
+      "image": "",
+      "name": "Chopsticks of Yokosuna",
+      "description": "provides you endless sushi, but you will be regularly attacked sumo wrestlers",
+      "price": 9.99
+    }
+  ]
+}
