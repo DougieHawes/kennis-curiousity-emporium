@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import App from "./App.jsx";
 import ErrorBoundary from "./ErrorBoundary";
@@ -8,7 +9,9 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <ErrorBoundary>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </ErrorBoundary>,
   document.getElementById("root")
 );

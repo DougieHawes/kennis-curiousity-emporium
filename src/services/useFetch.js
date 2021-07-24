@@ -8,23 +8,17 @@ export default function useFetch(url) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    async function init() {
-      try {
-        const response = await fetch(baseUrl + url);
-        if (response.ok) {
-          const json = await response.json();
-
-          setData(json);
-        } else {
-          throw response;
-        }
-      } catch (err) {
+    fetch(baseUrl + url)
+      .then((response) => {
+        if (response.ok) return response.json();
+        throw response;
+      })
+      .then((data) => setData(data))
+      .catch((err) => {
+        console.error(err);
         setError(err);
-      } finally {
-        setLoading(true);
-      }
-    }
-    init();
+      })
+      .finally(() => setLoading(false));
   }, [url]);
 
   return [data, loading, error];
